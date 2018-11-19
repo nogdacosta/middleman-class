@@ -1,15 +1,18 @@
 ---
-title: Le Wagon - Middleman
+title: THIS IS INDEX
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
-  </div>
+<div class="container">
+
+	
+	<h1>Today is <%= Date.today.strftime("%A, %b %d") %></h1>
+
+	<ul>
+		<% %w(middleman javascript ruby scss).each do |tech| %>
+			<li>I'm playing with <%= tech %></li>	
+		<% end %>
+	</ul>
+
+	<a href="#" class="btn btn-primary">NEW BUTTON</a>
+
 </div>
